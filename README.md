@@ -1,3 +1,4 @@
+Public URL: [https://kmb.nephosdev.com](https://kmb.nephosdev.com)
 # Local AI Workload on Kubernetes (K3s)
 
 This repository automates the provisioning of a local Kubernetes cluster and deploys a lightweight Large Language Model (LLM) inference server with a graphical web interface. 
