@@ -101,6 +101,8 @@ curl -X POST http://192.168.2.253/api/generate \
 # 🌐 Accessing the Web UI
 
 To interact with the AI via a ChatGPT-like graphical interface, we need to map the ingress hostname (`kube.worker.lab`) to your master node's IP address.
+or
+Public URL: [https://kmb.nephosdev.com](https://kmb.nephosdev.com)
 
 ## 1. Update your local hosts file
 
@@ -120,7 +122,7 @@ Add the following line to your local machine's hosts file (requires Administrato
 Navigate to:
 
 ```
-http://kube.worker.lab
+http://kube.worker.lab / [https://kmb.nephosdev.com](https://kmb.nephosdev.com)
 ```
 
 > The first account you create on the Open WebUI login screen will automatically become the administrator account.  
