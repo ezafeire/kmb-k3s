@@ -6,8 +6,8 @@ metadata:
   labels:
     app: ollama
 spec:
-replicas: 1
-  Selector:
+  replicas: 1
+  selector:
     matchLabels:
       app: ollama
   template:
