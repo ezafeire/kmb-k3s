@@ -1,0 +1,23 @@
+name: CI
+on:
+  pull_request:
+    branches:
+      - master
+    paths:
+      - 'k8s/**'
+
+jobs:
+  lint-manifests:
+    name: Lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Lint Kubernetes Manifests
+        uses: stackrox/kube-linter-action@v1.0.4
+        with:
+          directory: k8s
+          format: plain
+          continue-on-error: false
