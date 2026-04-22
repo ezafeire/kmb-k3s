@@ -17,7 +17,19 @@ spec:
                 name: ollama-service
                 port:
                   number: 80
+    
     - host: "kube.worker.lab"
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: open-webui-service
+                port:
+                  number: 80
+
+    - host: "kmb.nephosdev.com"
       http:
         paths:
           - path: /
